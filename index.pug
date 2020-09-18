@@ -1,0 +1,9 @@
+extends _views/layouts/main
+
+block content
+  h1 Hello World
+
+  ul
+    each usecase in collections.usecase
+      li
+        a(href=usecase.url)= usecase.data.title
